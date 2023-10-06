@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.3'
 
-gem 'rails', '~> 4.1.6'
+gem 'rails', '~> 7.1.0'
 
 #
 # PLATFORM SPECIFIC
@@ -29,21 +29,21 @@ gem 'dalli'                     # memcached
 # gem 'jbuilder'
 
 # Assets
-gem 'sass-rails'
-gem 'haml-rails'
-gem 'simple_form'
+gem 'sass-rails', '>= 5.0.8'
+gem 'haml-rails', '>= 0.6.0'
+gem 'simple_form', '>= 4.0.0'
 gem 'uglifier'
 gem 'headjs-rails'
 
 # Javascript
-gem 'jquery-rails'
-gem 'turbolinks'
+gem 'jquery-rails', '>= 4.0.1'
+gem 'turbolinks', '>= 2.5.0'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 
 # CoffeeScript
 # Not needed in production if precompiling assets
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.2.2'
 # Uncomment if node.js is not installed
 # gem 'therubyracer', platforms: :ruby
 
@@ -54,10 +54,10 @@ gem 'bootstrap-sass'
 # gem 'country_select'
 
 # Email
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.10.3'
 
 # Authentication
-gem 'devise'
+gem 'devise', '>= 4.7.0'
 gem 'cancancan', '~> 1.9'
 gem 'omniauth'
 gem 'omniauth-facebook'
@@ -67,11 +67,11 @@ gem 'omniauth-twitter'
 # gem 'omniauth-linkedin'
 
 # Admin
-gem 'rails_admin'
+gem 'rails_admin', '>= 3.0.0'
 
 # Workers
 gem 'sidekiq'
-gem 'devise-async'
+gem 'devise-async', '>= 1.0.0'
 gem 'sinatra', require: false
 
 # Utils
@@ -117,8 +117,8 @@ group :development, :test do
   gem 'awesome_print'           # pretty pring debugging output
 
   # Testing
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'rspec-rails', '>= 3.5.0'
+  gem 'factory_girl_rails', '>= 4.6.0'
   gem 'ffaker'
   gem 'capybara-webkit'
   # gem 'poltergeist'           # alternative to capybara-webkit
