@@ -67,7 +67,7 @@ gem 'omniauth-twitter'
 # gem 'omniauth-linkedin'
 
 # Admin
-gem 'rails_admin'
+gem 'rails_admin', '>= 0.6.6'
 
 # Workers
 gem 'sidekiq'
