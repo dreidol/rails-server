@@ -67,7 +67,7 @@ gem 'omniauth-twitter'
 # gem 'omniauth-linkedin'
 
 # Admin
-gem 'rails_admin'
+gem 'rails_admin', '>= 0.6.6'
 
 # Workers
 gem 'sidekiq'
@@ -120,7 +120,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'ffaker'
-  gem 'capybara-webkit'
+  gem 'capybara-webkit', '>= 1.3.1'
   # gem 'poltergeist'           # alternative to capybara-webkit
   # gem 'capybara-firebug'
   # gem 'launchy'               # save_and_open_page support for rspec
