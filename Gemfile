@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.3'
 
-gem 'rails', '~> 4.1.6'
+gem 'rails', '~> 7.0.0'
 
 #
 # PLATFORM SPECIFIC
@@ -29,7 +29,7 @@ gem 'dalli'                     # memcached
 # gem 'jbuilder'
 
 # Assets
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'haml-rails'
 gem 'simple_form'
 gem 'uglifier'
@@ -37,7 +37,7 @@ gem 'headjs-rails'
 
 # Javascript
 gem 'jquery-rails'
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 
@@ -67,7 +67,7 @@ gem 'omniauth-twitter'
 # gem 'omniauth-linkedin'
 
 # Admin
-gem 'rails_admin'
+gem 'rails_admin', '>= 3.0.0'
 
 # Workers
 gem 'sidekiq'
