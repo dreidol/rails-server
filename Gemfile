@@ -72,7 +72,7 @@ gem 'rails_admin'
 # Workers
 gem 'sidekiq'
 gem 'devise-async'
-gem 'sinatra', require: false
+gem 'sinatra', '>= 4.1.0', require: false
 
 # Utils
 gem 'addressable'
