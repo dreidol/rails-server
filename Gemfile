@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.3'
 
-gem 'rails', '~> 4.1.6'
+gem 'rails', '~> 7.1.0'
 
 #
 # PLATFORM SPECIFIC
@@ -30,20 +30,20 @@ gem 'dalli'                     # memcached
 
 # Assets
 gem 'sass-rails'
-gem 'haml-rails'
-gem 'simple_form'
+gem 'haml-rails', '>= 1.0.0'
+gem 'simple_form', '>= 4.0.0'
 gem 'uglifier'
 gem 'headjs-rails'
 
 # Javascript
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 
 # CoffeeScript
 # Not needed in production if precompiling assets
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.2.2'
 # Uncomment if node.js is not installed
 # gem 'therubyracer', platforms: :ruby
 
@@ -54,25 +54,25 @@ gem 'bootstrap-sass'
 # gem 'country_select'
 
 # Email
-gem 'premailer-rails'
+gem 'premailer-rails', '>= 1.10.3'
 
 # Authentication
-gem 'devise'
+gem 'devise', '>= 4.7.0'
 gem 'cancancan', '~> 1.9'
-gem 'omniauth'
-gem 'omniauth-facebook'
-gem 'omniauth-twitter'
+gem 'omniauth', '>= 2.1.0'
+gem 'omniauth-facebook', '>= 2.0.1'
+gem 'omniauth-twitter', '>= 1.2.0'
 # gem 'omniauth-persona'
 # gem 'omniauth-google-oauth2'
 # gem 'omniauth-linkedin'
 
 # Admin
-gem 'rails_admin'
+gem 'rails_admin', '>= 3.0.0'
 
 # Workers
 gem 'sidekiq'
-gem 'devise-async'
-gem 'sinatra', require: false
+gem 'devise-async', '>= 1.0.0'
+gem 'sinatra', '>= 2.0.0', require: false
 
 # Utils
 gem 'addressable'
@@ -80,7 +80,7 @@ gem 'settingslogic'
 
 group :development do
   # Docs
-  gem 'sdoc', require: false    # bundle exec rake doc:rails
+  gem 'sdoc', '>= 1.0.0', require: false # bundle exec rake doc:rails
 
   # Errors
   # gem 'better_errors'
@@ -91,7 +91,7 @@ group :development do
   # gem 'capistrano'
 
   # Guard
-  gem 'guard-rspec'
+  gem 'guard-rspec', '>= 4.4.1'
   # gem 'guard-livereload'
   # gem 'rack-livereload'
 end
@@ -117,24 +117,24 @@ group :development, :test do
   gem 'awesome_print'           # pretty pring debugging output
 
   # Testing
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'rspec-rails', '>= 3.5.0'
+  gem 'factory_girl_rails', '>= 4.6.0'
   gem 'ffaker'
-  gem 'capybara-webkit'
+  gem 'capybara-webkit', '>= 1.3.1'
   # gem 'poltergeist'           # alternative to capybara-webkit
   # gem 'capybara-firebug'
   # gem 'launchy'               # save_and_open_page support for rspec
   # gem 'zeus-parallel_tests'   # speed up lengthy tests
 
   # Logging
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.1.0'
 end
 
 group :test do
   gem 'minitest'                # include minitest to prevent require 'minitest/autorun' warnings
 
   # Helpers
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '>= 2.8.0'
   gem 'database_cleaner'
   # gem 'timecop'               # Mock Time
 
@@ -142,8 +142,8 @@ group :test do
   gem 'simplecov', require: false
   # gem 'coveralls', :require => false
 
-  gem 'rspec-sidekiq'
-  gem 'rspec-activemodel-mocks'
+  gem 'rspec-sidekiq', '>= 2.1.0'
+  gem 'rspec-activemodel-mocks', '>= 1.0.2'
 end
 
 group :production do
