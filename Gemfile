@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.3'
 
-gem 'rails', '~> 4.1.6'
+gem 'rails', '~> 4.1.7'
 
 #
 # PLATFORM SPECIFIC
@@ -29,21 +29,21 @@ gem 'dalli'                     # memcached
 # gem 'jbuilder'
 
 # Assets
-gem 'sass-rails'
-gem 'haml-rails'
+gem 'sass-rails', '>= 4.0.4'
+gem 'haml-rails', '>= 0.6.0'
 gem 'simple_form'
 gem 'uglifier'
 gem 'headjs-rails'
 
 # Javascript
-gem 'jquery-rails'
-gem 'turbolinks'
+gem 'jquery-rails', '>= 3.1.3'
+gem 'turbolinks', '>= 2.5.0'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 
 # CoffeeScript
 # Not needed in production if precompiling assets
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 4.1.1'
 # Uncomment if node.js is not installed
 # gem 'therubyracer', platforms: :ruby
 
@@ -57,7 +57,7 @@ gem 'bootstrap-sass'
 gem 'premailer-rails'
 
 # Authentication
-gem 'devise'
+gem 'devise', '>= 3.4.1'
 gem 'cancancan', '~> 1.9'
 gem 'omniauth'
 gem 'omniauth-facebook'
@@ -67,11 +67,11 @@ gem 'omniauth-twitter'
 # gem 'omniauth-linkedin'
 
 # Admin
-gem 'rails_admin'
+gem 'rails_admin', '>= 0.6.6'
 
 # Workers
 gem 'sidekiq'
-gem 'devise-async'
+gem 'devise-async', '>= 0.10.1'
 gem 'sinatra', require: false
 
 # Utils
@@ -91,7 +91,7 @@ group :development do
   # gem 'capistrano'
 
   # Guard
-  gem 'guard-rspec'
+  gem 'guard-rspec', '>= 4.4.1'
   # gem 'guard-livereload'
   # gem 'rack-livereload'
 end
@@ -117,8 +117,8 @@ group :development, :test do
   gem 'awesome_print'           # pretty pring debugging output
 
   # Testing
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'rspec-rails', '>= 3.2.0'
+  gem 'factory_girl_rails', '>= 4.6.0'
   gem 'ffaker'
   gem 'capybara-webkit'
   # gem 'poltergeist'           # alternative to capybara-webkit
@@ -127,7 +127,7 @@ group :development, :test do
   # gem 'zeus-parallel_tests'   # speed up lengthy tests
 
   # Logging
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.1.0'
 end
 
 group :test do
