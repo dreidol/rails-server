@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.3'
 
-gem 'rails', '~> 4.1.6'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 
 #
 # PLATFORM SPECIFIC
@@ -67,7 +67,7 @@ gem 'omniauth-twitter'
 # gem 'omniauth-linkedin'
 
 # Admin
-gem 'rails_admin'
+gem 'rails_admin', '>= 3.0.0'
 
 # Workers
 gem 'sidekiq'
